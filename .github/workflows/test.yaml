@@ -13,13 +13,14 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     name: Build
-    ## runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Trigger jenkins job
         uses: joshlk/jenkins-githubaction@master
         with:
           url: http://13.58.103.23:8080/
           job_name: status-check-pipeline
-         ## username: ${{ secrets.JENKINS_USER }}
-          api_token: ${{ secrets.JENKINS_TOKEN }}
+          ##username: ${{ secrets.JENKINS_USER }}
+          username: admin
+          api_token: ${{ secrets.JENKINS_ACTION_TOCKEN }}
           timeout: "1000"
