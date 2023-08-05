@@ -21,5 +21,5 @@ jobs:
           url: http://13.58.103.23:8080/
           job_name: status-check-pipeline
          ## username: ${{ secrets.JENKINS_USER }}
-          api_token: ${{ secrets.JENKINS_TOKEN }}
+          api_token: ${{ secrets.JENKINS_ACTION_TOCKEN }}
           timeout: "1000"
